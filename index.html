@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> The Bloody Masscre </title>
+
+	<!-- IMPORT JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Butterfly%20Kids">
+</head>
+
+<body>
+
+	<div class="Container document">
+
+		<div class="Containerlogo">
+			<img class="Logo" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine"
+				src="/images/logo.png" alt="Paul Revere">
+		</div>
+
+
+		<div class="Containertwo">
+			<h1 data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				Paul
+				Revere
+			</h1>
+			<div class="Intro" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<p>
+					Paul Revere était un des patriotes les plus importants du 18ème siècle en Amérique.
+					Il était celui qui a fait le fameux Midnight Ride en 1775.
+				</p>
+			</div>
+			<div class="List" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<p>Mais avant tout cela, en 1768, des troupes anglaises ont débarqué à Boston avec le but d’intimider et
+					de contrôler le peuple américain, en représailles à la violence des colons après que les Anglais
+					leur ont imposé plus de taxes pour financer la guerre franco-indienne. Parmi les protestations, il y
+					a eu le massacre de Boston, ou des soldats anglais ont tiré sur une foule.</p>
+			</div>
+
+			<img data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine"
+				src="https://cdn.britannica.com/16/151716-050-81009173/engraving-Boston-Massacre-Paul-Revere.jpg"
+				alt="The Bloody Massacre" class="Engraving" />
+			<em>The Bloody Massacre</em>
+			<div class="List" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<p> <em>The Bloody Massacre</em>, la gravure faite par Paul Revere, dépeint cet événement. A droite, on
+					voit des soldats organisés en ligne qui tirent sur une foule désorganisée et non armée. En réalité,
+					les soldats étaient plus dispersés, et la foule n'était pas si passive. Le but de cette gravure
+					était d’inspirer un sentiment anti-britannique chez les colons, de leur demander s'ils étaient en
+					accord avec cette injustice. </p>
+			</div>
+
+			<div class="List" data-aos="fade-zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+				<img class="dog" src="/images/doggo.png" cl src="Le chien" />
+				<p>Dans la gravure on peut voir aussi un chien. Les chiens peuvent représenter la loyauté et la
+					fidélité, et son placement la montre la loyauté des bostonians au roi, et la trahison de cette
+					loyauté par les anglais. On peut voir avec cette gravure que Paul Revere était un patriote qui
+					voulait inspirer les colons pour prendre armes contre les Anglais.</p>
+			</div>
+		</div>
+	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0" width="0">
+		<defs>
+			<filter id="squiggle">
+				<feTurbulence type="fractalNoise" id="turbulence" baseFrequency=".05" numOctaves="4" />
+				<feDisplacementMap id="displacement" in="SourceGraphic" scale="4" />
+			</filter>
+		</defs>
+	</svg>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script>
+		AOS.init();
+		var r = document.querySelector(':root');
+		window.addEventListener('DOMContentLoaded', (event) => {
+			r.style.setProperty('--containerHeight', $(document).height() + 'px');
+		});
+	</script>
+</body>
+
+</html>
