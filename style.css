@@ -2,9 +2,7 @@
      font-family: "Essays 1789";
      src: url("/fonts/Essays1743.ttf");
 }
- :root {
-     --containerHeight: 100vh;
-}
+
  p {
      font-size: 20px;
      font-family: 'Essays 1789';
@@ -13,20 +11,9 @@
      filter: none !important;
 }
  body {
-     margin: 10px;
-     border-radius: 10px;
-}
- body::before {
-     content: "";
-     position: absolute;
-     top: 10;
-     left: 17.5%;
-     width: 65%;
-     height: var(--containerHeight);
      background-size: cover;
      background-repeat: repeat-y;
      background-image: url(/images/bg.avif);
-     filter: url(#squiggle);
 }
  img {
      margin: 10px;
